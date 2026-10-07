@@ -1,0 +1,17 @@
+{
+  "name": "caldera-endurance",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "no_bundle": true,
+  "assets": {"directory": "dist/client"},
+  "rules": [{"type":"ESModule","globs":["**/*.js","**/*.mjs"]}],
+  "vars": {
+    "AUTH_MODE": "cloudflare-access",
+    "ADMIN_EMAILS": "vicycledph@gmail.com",
+    "CF_ACCESS_TEAM_DOMAIN": "https://YOUR-TEAM.cloudflareaccess.com",
+    "CF_ACCESS_AUD": "REPLACE_WITH_ACCESS_APPLICATION_AUD"
+  },
+  "d1_databases": [{"binding":"DB","database_name":"caldera-endurance","database_id":"REPLACE_WITH_D1_ID","migrations_dir":"drizzle"}],
+  "r2_buckets": [{"binding":"BUCKET","bucket_name":"caldera-endurance-proofs"}]
+}

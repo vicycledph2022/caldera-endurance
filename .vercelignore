@@ -1,0 +1,8 @@
+node_modules
+.next
+.env*
+.dev.vars*
+.openai
+dist
+.wrangler
+*.tsbuildinfo
